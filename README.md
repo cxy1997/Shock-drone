@@ -1,2 +1,19 @@
-# Engineering-Practice-and-Innovation-of-Science-and-Technology-3C
-SJTU EI312 Project
+# SJTU EI312 Project
+## This project implements a controllable drone with visual feedback and [Tom Clancy's Rainbow Six® Siege](https://rainbow6.ubisoft.com/siege/en-GB/home/index.aspx) theme UI, as the drone resembles Twitch's shock drone in the game.
+
+- The remote control is implemented with Android device -> Bluetooth Serial Communitation -> MSP430 Microcontroller
+
+- The visual feedback is implemented with Android transmitter -> socket communication -> Android receiver
+
+## Five available control modes:
+
+- Traditional: control with 4 direction buttons to direct the drone in 9 directions
+
+- Joystick: no need to explain
+
+- Trajectory Inmitation: Draw a trajectory on screen and the drone will perform it
+
+- Gravity: no need to explain
+
+- Voice control: currently only Mandarin is supported
+

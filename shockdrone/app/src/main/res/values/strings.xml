@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shock Drone</string>
+    <string name="IP_prompt">接收设备IP地址：</string>
+    <string name="IP_default">10.163.49.133</string>
+    <string name="port_default">25600</string>
+    <string name="IP_separator">.</string>
+    <string name="port_separator">:</string>
+    <string name="confirm_text">Link Start!</string>
+    <string name="bitmap_compress_level">20</string>
+</resources>

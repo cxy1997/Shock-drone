@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sckd_0"/>
+
+    <RelativeLayout
+        android:id="@+id/IP_as_whole"
+        android:layout_width="370dp"
+        android:layout_height="38dp"
+        android:background="@drawable/white_input_frame"
+        android:layout_marginBottom="65dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/input_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/IP_prompt"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/target_IP_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/input_prompt"
+            android:background="@android:color/transparent"
+            android:ems="3"
+            android:maxLength="3"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="12sp"/>
+
+        <TextView
+        android:id="@+id/dot_1"
+        android:layout_toEndOf="@id/target_IP_0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="2dp"
+        android:text="@string/IP_separator"
+        android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/target_IP_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/dot_1"
+            android:background="@android:color/transparent"
+            android:ems="3"
+            android:maxLength="3"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/dot_2"
+            android:layout_toEndOf="@id/target_IP_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:text="@string/IP_separator"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/target_IP_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/dot_2"
+            android:background="@android:color/transparent"
+            android:ems="3"
+            android:maxLength="3"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/dot_3"
+            android:layout_toEndOf="@id/target_IP_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:text="@string/IP_separator"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/target_IP_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/dot_3"
+            android:background="@android:color/transparent"
+            android:ems="3"
+            android:maxLength="3"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/colon"
+            android:layout_toEndOf="@id/target_IP_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:text="@string/port_separator"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/target_port"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@id/colon"
+            android:background="@android:color/transparent"
+            android:ems="5"
+            android:maxLength="5"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="12sp">
+            <requestFocus/>
+        </EditText>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:text="@string/confirm_text"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/confirm_button"
+        android:layout_marginBottom="94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

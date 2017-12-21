@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/foreground_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/sckd_0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/RB6_theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/rb6theme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <cxy.twitch.Touchpad
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/transparent"
+        android:id="@+id/touchPad" />
+
+    <RelativeLayout
+        android:id="@+id/cfg_pad"
+        android:layout_width="560dp"
+        android:layout_height="280dp"
+        android:background="@drawable/config_pad"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/IP_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/IP_prefix"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/port_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@id/IP_info"
+            android:background="#FFFFFF"
+            android:ems="5"
+            android:maxLength="5"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/video_stream_switch_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/video_stream"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <Switch
+            android:id="@+id/video_stream_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Color1SwitchStyle"
+            android:layout_marginEnd="26dp"
+            android:layout_alignBaseline="@+id/video_stream_switch_prompt"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/Bluetooth_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/Bluetooth_prefix"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:id="@+id/bluetooth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="57dp"
+            android:layout_toEndOf="@id/Bluetooth_info"
+            android:background="#FFFFFF"
+            android:ems="6"
+            android:maxLength="10"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/Bluetooth_switch_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/Bluetooth_stream"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <Switch
+            android:id="@+id/Bluetooth_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Color1SwitchStyle"
+            android:layout_marginEnd="26dp"
+            android:layout_alignBaseline="@+id/Bluetooth_switch_prompt"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:padding="1dp"
+            android:text="@string/Control_methods"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/Bluetooth_switch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:id="@+id/textView"/>
+
+        <ImageView
+            android:id="@+id/m01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/m01"
+            android:scaleType="fitXY"
+            android:layout_above="@+id/button_confirm"
+            android:layout_alignStart="@+id/Bluetooth_info"
+            android:layout_marginBottom="18dp"/>
+
+        <RelativeLayout
+            android:id="@+id/c01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#8089CFF0"
+            android:layout_alignTop="@+id/m01"
+            android:layout_alignStart="@+id/m01"/>
+
+        <ImageView
+            android:id="@+id/m02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/m02"
+            android:layout_marginEnd="16dp"
+            android:layout_alignTop="@+id/m01"
+            android:layout_toStartOf="@+id/textView"/>
+
+        <RelativeLayout
+            android:id="@+id/c02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#8089CFF0"
+            android:layout_alignTop="@+id/m02"
+            android:layout_alignStart="@+id/m02"/>
+
+        <ImageView
+            android:id="@+id/m03"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/m03"
+            android:layout_alignTop="@+id/m02"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/c03"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#8089CFF0"
+            android:layout_alignTop="@+id/m03"
+            android:layout_alignStart="@+id/m03"/>
+
+        <ImageView
+            android:id="@+id/m04"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/m04"
+            android:layout_alignTop="@+id/m03"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginStart="17dp"/>
+
+        <RelativeLayout
+            android:id="@+id/c04"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#8089CFF0"
+            android:layout_alignTop="@+id/m04"
+            android:layout_alignStart="@+id/m04"/>
+
+        <ImageView
+            android:id="@+id/m05"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/m05"
+            android:layout_alignTop="@+id/m04"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"/>
+
+        <RelativeLayout
+            android:id="@+id/c05"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#8089CFF0"
+            android:layout_alignTop="@+id/m05"
+            android:layout_alignStart="@+id/m05"/>
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:text="@string/confirm_text"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/confirm_button"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_config"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gear02"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/cfg_pad"
+        android:layout_toStartOf="@+id/cfg_pad">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/button_up"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrowup"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/button_config"
+        android:layout_alignStart="@+id/cfg_pad">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/button_down"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrowdown"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/button_up"
+        android:layout_alignStart="@+id/button_up">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/button_left"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrowleft"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignBottom="@+id/button_down"
+        android:layout_toStartOf="@+id/button_right">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/button_right"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrowright"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/button_left"
+        android:layout_alignEnd="@id/background_view">
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/j01"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/j01"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"/>
+
+    <ImageButton
+        android:id="@+id/button_voice"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/m05" >
+    </ImageButton>
+
+    <cxy.twitch.Joystick
+        android:id="@+id/j02"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/j02"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/j01"
+        android:layout_alignStart="@+id/j01"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"/>
+
+
+
+</RelativeLayout>

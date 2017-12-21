@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Twitch</string>
+    <string name="confirm_text">确定</string>
+    <string name="IP_prefix">本机IP：</string>
+    <string name="port_default">25600</string>
+    <string name="video_stream">实时图像传输</string>
+    <string name="Bluetooth_prefix">目标蓝牙设备名称：</string>
+    <string name="Bluetooth_stream">蓝牙遥控</string>
+    <string name="Bluetooth_name_default">linvor</string>
+    <string name="Control_methods">遥 控 方 式</string>
+</resources>

@@ -11,7 +11,7 @@
 
 - Joystick: no need to explain
 
-- Trajectory Inmitation: Draw a trajectory on screen and the drone will perform it
+- Trajectory Immitation: Draw a trajectory on screen and the drone will perform it
 
 - Gravity: no need to explain
 

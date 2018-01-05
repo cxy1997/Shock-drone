@@ -20,11 +20,12 @@
 
 ## The real shock-drone
 
-![Screenshot_shockdrone](https://github.com/cxy1997/Engineering-Practice-and-Innovation-of-Science-and-Technology-3C/blob/master/screenshots/real_drone.jpg)
+![shockdrone](https://github.com/cxy1997/Shock-drone/blob/master/screenshots/real_drone.jpg)
+![shockdrone2](https://github.com/cxy1997/Shock-drone/blob/master/screenshots/real_drone2.jpg)
 
 ## Screenshots
 
-![Screenshot_shockdrone](https://github.com/cxy1997/Engineering-Practice-and-Innovation-of-Science-and-Technology-3C/blob/master/screenshots/Screenshot_shockdrone.png)
-![Screenshot_twitch](https://github.com/cxy1997/Engineering-Practice-and-Innovation-of-Science-and-Technology-3C/blob/master/screenshots/Screenshot_twitch.png)
+![Screenshot_shockdrone](https://github.com/cxy1997/Shock-drone/blob/master/screenshots/Screenshot_shockdrone.png)
+![Screenshot_twitch](https://github.com/cxy1997/Shock-drone/blob/master/screenshots/Screenshot_twitch.png)
 
 

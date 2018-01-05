@@ -21,7 +21,6 @@
 ## The real shock-drone
 
 ![Screenshot_shockdrone](https://github.com/cxy1997/Engineering-Practice-and-Innovation-of-Science-and-Technology-3C/blob/master/screenshots/real_drone.jpg)
-![Screenshot_shockdrone](https://github.com/cxy1997/Engineering-Practice-and-Innovation-of-Science-and-Technology-3C/blob/master/screenshots/real_drone2.jpg)
 
 ## Screenshots
 

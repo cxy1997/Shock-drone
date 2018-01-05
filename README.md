@@ -18,6 +18,10 @@
 
 - Voice control: currently only Mandarin is supported
 
+## The real shock-drone
+
+![Screenshot_shockdrone](https://github.com/cxy1997/Engineering-Practice-and-Innovation-of-Science-and-Technology-3C/blob/master/screenshots/real_drone.jpg)
+
 ## Screenshots
 
 ![Screenshot_shockdrone](https://github.com/cxy1997/Engineering-Practice-and-Innovation-of-Science-and-Technology-3C/blob/master/screenshots/Screenshot_shockdrone.png)
